@@ -49,7 +49,7 @@ module.exports = class Stats extends Command {
                     }
                 ).sort(
                     {
-                        taotlNombres: -1
+                        totalNombres: -1
                     }
                 );
 
