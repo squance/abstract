@@ -55,26 +55,26 @@ module.exports = class ServerInfo extends Command {
                     image: {
                         url: "attachment://" + attachment.name
                     },  
-description: `${message.guild.description ? message.guild.description : ""}
+                    description: `${message.guild.description ? message.guild.description : ""}
 
-**Membres**
-Compte: ${message.guild.memberCount}/${message.guild.maximumMembers}
-Bots: ${message.guild.members.cache.filter(m => m.user.bot).size}
-Staff: ${message.guild.members.cache.filter(m => m.hasPermission(["BAN_MEMBERS", "MANAGE_MESSAGES", "KICK_MEMBERS", "MANAGE_GUILD", "ADMINISTRATOR"])).size}
-Statut des membres: ${message.client.emotes.online} ${message.guild.members.cache.filter(m => ["dnd", "idle", "online"].includes(m.user.presence.status)).size} ${message.client.emotes.offline} ${message.guild.members.cache.filter(m => m.user.presence.status === "offline").size}
+                    **Membres**
+                    Compte: ${message.guild.memberCount}/${message.guild.maximumMembers}
+                    Bots: ${message.guild.members.cache.filter(m => m.user.bot).size}
+                    Staff: ${message.guild.members.cache.filter(m => m.hasPermission(["BAN_MEMBERS", "MANAGE_MESSAGES", "KICK_MEMBERS", "MANAGE_GUILD", "ADMINISTRATOR"])).size}
+                    Statut des membres: ${message.client.emotes.online} ${message.guild.members.cache.filter(m => ["dnd", "idle", "online"].includes(m.user.presence.status)).size} ${message.client.emotes.offline} ${message.guild.members.cache.filter(m => m.user.presence.status === "offline").size}
 
-**Global**
-Région: ${message.guild.region.charAt(0).toUpperCase() + message.guild.region.slice(1)}
-Salon de règles: ${message.guild.rulesChannelID ? `<#${message.guild.rulesChannelID}>` :"aucun"}
-Salons: ${message.guild.channels.cache.size}
-Rôles: ${message.guild.roles.cache.size} 
-Emojis: ${message.guild.emojis.cache.size}
-Bannière: ${message.guild.banner ? `[lien](${message.guild.bannerURL({size: 1024})})` : "aucune"}
-Palier de boosts: ${message.guild.premiumTier}
-Nombre de boosts: ${message.guild.premiumSubscriptionCount}
+                    **Global**
+                    Région: ${message.guild.region.charAt(0).toUpperCase() + message.guild.region.slice(1)}
+                    Salon de règles: ${message.guild.rulesChannelID ? `<#${message.guild.rulesChannelID}>` :"aucun"}
+                    Salons: ${message.guild.channels.cache.size}
+                    Rôles: ${message.guild.roles.cache.size} 
+                    Emojis: ${message.guild.emojis.cache.size}
+                    Bannière: ${message.guild.banner ? `[lien](${message.guild.bannerURL({size: 1024})})` : "aucune"}
+                    Palier de boosts: ${message.guild.premiumTier}
+                    Nombre de boosts: ${message.guild.premiumSubscriptionCount}
 
-Features: ${message.guild.features.length > 0 ? message.guild.features.map(v => v.toLowerCase()).join(", ") : "aucun"}
-Owner: <@!${message.guild.ownerID}> (${message.guild.owner.user.tag})`
+                    Features: ${message.guild.features.length > 0 ? message.guild.features.map(v => v.toLowerCase()).join(", ") : "aucun"}
+                    Owner: <@!${message.guild.ownerID}> (${message.guild.owner.user.tag})`
                 }
 
             }
