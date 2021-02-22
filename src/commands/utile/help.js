@@ -35,15 +35,15 @@ module.exports = class Help extends Command {
                     },
                     title: `Commande: ${command.help.name}`,
                     url: message.client.links.invite,
-description: `Activée: ${command.help.enabled ? message.client.emotes.greenSmallSquare : message.client.config.redSmallSquare}
-Description: [${command.help.description}](${message.client.links.invite})
-Message: [${command.help.message ? command.help.message : `aucun`}](${message.client.links.invite})
-Aliases: [${command.help.aliases.length > 0 ? command.help.aliases.map(v => v).join(", ") : "aucun"}](${message.client.links.invite})
-Catégorie: [${command.help.category}](${message.client.links.invite})
-Utilisation: [${command.help.usage ? `${prefix}${command.help.name} ${command.help.usage}` : "aucune"}](${message.client.links.invite})
-Permissions: [${command.help.perm.length > 0 ? command.help.perm.map(v => v.toLowerCase()).join(", ") : "aucune"}](${message.client.links.invite})
-Permissions du bot: [${command.help.botPerm.length > 0 ? command.help.botPerm.map(v => v.toLowerCase()).join(", ") : "aucune"}](${message.client.links.invite})` //ok
-}
+                    description: `Activée: ${command.help.enabled ? message.client.emotes.greenSmallSquare : message.client.config.redSmallSquare}
+                    Description: [${command.help.description}](${message.client.links.invite})
+                    Message: [${command.help.message ? command.help.message : `aucun`}](${message.client.links.invite})
+                    Aliases: [${command.help.aliases.length > 0 ? command.help.aliases.map(v => v).join(", ") : "aucun"}](${message.client.links.invite})
+                    Catégorie: [${command.help.category}](${message.client.links.invite})
+                    Utilisation: [${command.help.usage ? `${prefix}${command.help.name} ${command.help.usage}` : "aucune"}](${message.client.links.invite})
+                    Permissions: [${command.help.perm.length > 0 ? command.help.perm.map(v => v.toLowerCase()).join(", ") : "aucune"}](${message.client.links.invite})
+                    Permissions du bot: [${command.help.botPerm.length > 0 ? command.help.botPerm.map(v => v.toLowerCase()).join(", ") : "aucune"}](${message.client.links.invite})` //ok
+                }
 
             });
         } else {
@@ -65,20 +65,20 @@ Permissions du bot: [${command.help.botPerm.length > 0 ? command.help.botPerm.ma
                 thumbnail: {
                     url: message.client.user.displayAvatarURL({size: 1024})
                 },
-description: `[Invitation](${message.client.links.invite})・[Support](${message.client.links.support})・[Github](${message.client.links.github})・[Doc](${message.client.links.documentation})
-Tips: \`${prefix}help <commande>\`
+                description: `[Invitation](${message.client.links.invite})・[Support](${message.client.links.support})・[Github](${message.client.links.github})・[Doc](${message.client.links.documentation})
+                Tips: \`${prefix}help <commande>\`
 
-**Configuration**
-${arrayOfCommands.filter(c => c.name === "utile")[0].commands}
+                **Configuration**
+                ${arrayOfCommands.filter(c => c.name === "utile")[0].commands}
 
-**Compteur**
-${arrayOfCommands.filter(c => c.name === "counter")[0].commands}
+                **Compteur**
+                ${arrayOfCommands.filter(c => c.name === "counter")[0].commands}
 
-**Suggestions**
-${arrayOfCommands.filter(c => c.name === "suggest")[0].commands}
+                **Suggestions**
+                ${arrayOfCommands.filter(c => c.name === "suggest")[0].commands}
 
-**Starboard**
-${arrayOfCommands.filter(c => c.name === "starboard")[0].commands}` // les embeds sont cassés sur téléphone
+                **Starboard**
+                ${arrayOfCommands.filter(c => c.name === "starboard")[0].commands}` // les embeds sont cassés sur téléphone
 
             }
             message.channel.send(
