@@ -65,7 +65,7 @@ Permissions du bot: [${command.help.botPerm.length > 0 ? command.help.botPerm.ma
                 thumbnail: {
                     url: message.client.user.displayAvatarURL({size: 1024})
                 },
-description: `[Invitation](${message.client.links.invite})・[Support](${message.client.links.support})・[Github: bientôt](${message.client.links.github})・[Doc](${message.client.links.documentation})
+description: `[Invitation](${message.client.links.invite})・[Support](${message.client.links.support})・[Github](${message.client.links.github})・[Doc](${message.client.links.documentation})
 Tips: \`${prefix}help <commande>\`
 
 **Configuration**
