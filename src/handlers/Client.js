@@ -23,7 +23,7 @@ class Abstract extends Client {
         this.links = {
             invite: "http://bit.ly/2Nr55Ec",
             documentation: "https://squance.gitbook.io/abstract/",
-            github: "https://github.com/",
+            github: "https://github.com/squance/abstract/settings",
             support: "http://bit.ly/2ZEqXP6"
         };
         this.privateGuild = "810483126556033024";
