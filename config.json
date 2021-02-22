@@ -1,0 +1,5 @@
+{
+  "prefix": "!",
+  "token": "VOTRE-TOKEN",
+  "mongoPass": "VOTRE PASS MONGO"
+}
