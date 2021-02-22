@@ -59,7 +59,7 @@ class Abstract extends Client {
 
     // fonction qui permet de me prévenir des erreurs
     async error(message, error) {
-        const errorChannel = await this.channels.fetch(this.privateChannels.errors);
+        const errorChannel = this.channels.resolve(this.privateChannels.errors);
         if (!errorChannel) return console.error(error);
         message.channel.send("Une erreur est survenue, apprenez-en davantage ici : <" + this.links.support + ">").catch(() => {});
         let invite = null;
@@ -91,7 +91,7 @@ class Abstract extends Client {
 
     // pareil que la fonction précédente à la différence que celle-ci me prévient des erreurs des events par exemple
     async error2(error) {
-        const errorChannel = await this.channels.fetch(this.privateChannels.errors);
+        const errorChannel = this.channels.resolve(this.privateChannels.errors);
         errorChannel.send(`<@!${this.ownerID}>`, {
             embed: {
                 color: this.colors.discordColor,
