@@ -1,7 +1,7 @@
 // Classe du client
 
 const { connect } = require("mongoose");
-const { Client, Collection } = require("Discord.js");
+const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const chalk = require("chalk");
 
