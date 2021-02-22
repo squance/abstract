@@ -2,6 +2,10 @@
 
 # Abstract
 
+**ATTENTION**: Ce projet n'est plus à jour, le bot n'existe plus, il a été crée uniquement pour que j'apprenne le JavaScript, mais maintenant je pars apprendre le C et le C++ LET'S GO, donc ce github est toujours accessible car j'ai vraiment aimé taffer dessus, mais le bot lui n'existe plus.
+
+
+
 > [Abstract](http://bit.ly/2Nr55Ec), mon premier projet de programmation et mon premier repository Github, est un bot Discord français et développé en utilisant la librairie [Discord.JS](https://discord.js.org/#/). Au départ, le bot a été développé uniquement pour montrer qu'on pouvait faire quelque chose avec aucune compétence, je ne m'étais dit à aucun moment que peut-être j'aimerais la programmation <3. Au final, j'ai pensé que ces dizaines (voire des centaines) d'heures de travail devaient être partagées avec les gens.. Parce qu'ensemble c'est toujours mieux que tout seul x')
 
 ### Les commandes d'Abstract
